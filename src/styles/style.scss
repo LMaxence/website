@@ -1,0 +1,8 @@
+@import "src/styles/variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $text-font, Helvetica, sans-serif;
+}

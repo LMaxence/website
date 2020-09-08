@@ -1,0 +1,42 @@
+@import "src/styles/variables.scss";
+@import "src/styles/typographies.scss";
+
+.landing {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .logo-container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 80%;
+    }
+  }
+
+  .description {
+    flex: 1;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text,
+    .header {
+      color: $white-color;
+      width: 80%;
+    }
+
+    .header {
+      @include h1-text;
+    }
+
+    .text {
+      @include regular-text;
+    }
+  }
+}

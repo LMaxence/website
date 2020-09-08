@@ -1,0 +1,10 @@
+@import "src/styles/variables.scss";
+
+@mixin h1-text {
+  font-size: $h1-font-size;
+  font-weight: bold;
+}
+
+@mixin regular-text {
+  font-size: $regular-font-size;
+}
