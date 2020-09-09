@@ -1,0 +1,67 @@
+@import "src/styles/variables";
+
+.button {
+  padding: 1.5 * $space-unit 4 * $space-unit;
+  border: solid 3px $secondary-color;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: color ease 0.5s, background-color ease 0.5s;
+
+  &.primary {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
+
+  &.secondary {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  &.white {
+    color: $white-color;
+    border-color: $white-color;
+
+    &:hover {
+      background-color: $white-color;
+      color: $primary-color;
+    }
+  }
+
+  .content {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button.animated {
+  .content::before {
+    opacity: 0;
+    content: ">";
+    position: absolute;
+    right: -4 * $space-unit;
+    bottom: 0;
+    transition: opacity ease 0.5s;
+    font-size: 36px;
+  }
+}
+
+.button.animated:hover  {
+  .content {
+    left: -2 * $space-unit;
+  }
+
+  .content::before {
+    opacity: 1;
+  }
+}

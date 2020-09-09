@@ -35,8 +35,22 @@
       @include h1-text;
     }
 
-    .text {
-      @include regular-text;
+    .text,
+    .link-button .button-text {
+      @include h3-text;
+    }
+
+    .buttons-container {
+      display: flex;
+      width: 80%;
+
+      .link-button {
+        margin-left: 4 * $space-unit;
+
+        &.first {
+          margin-left: unset;
+        }
+      }
     }
   }
 }

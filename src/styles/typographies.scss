@@ -5,6 +5,14 @@
   font-weight: bold;
 }
 
+@mixin h3-text {
+  font-size: $h3-font-size;
+}
+
 @mixin regular-text {
   font-size: $regular-font-size;
+}
+
+@mixin navbar-link-text {
+  font-size: $large-font-size;
 }

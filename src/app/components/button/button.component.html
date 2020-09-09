@@ -1,0 +1,15 @@
+<button
+  class="button"
+  [disabled]="false"
+  [ngClass]="{
+    primary: color === 'primary',
+    secondary: color === 'secondary',
+    white: color === 'white',
+    animated: animate
+  }"
+  (click)="!disabled && click.emit()"
+>
+  <span class="content">
+    <ng-content></ng-content>
+  </span>
+</button>
