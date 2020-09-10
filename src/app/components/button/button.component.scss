@@ -6,6 +6,7 @@
   border-radius: 0;
   background-color: transparent;
   cursor: pointer;
+  width: 100%;
 
   transition: color ease 0.5s, background-color ease 0.5s;
 
@@ -45,14 +46,19 @@
 }
 
 .button.animated {
-  .content::before {
-    opacity: 0;
-    content: ">";
+  .icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
     position: absolute;
-    right: -4 * $space-unit;
-    bottom: 0;
-    transition: opacity ease 0.5s;
-    font-size: 36px;
+    right: -36px;
+
+    .chevron {
+      opacity: 0;
+      transition: opacity ease 0.5s;
+      font-size: 24px;
+      width: 36px;
+    }
   }
 }
 
@@ -61,7 +67,7 @@
     left: -2 * $space-unit;
   }
 
-  .content::before {
+  .icon .chevron {
     opacity: 1;
   }
 }

@@ -1,9 +1,12 @@
 <div class="navbar">
-  <a>
+  <mat-icon class="burger" (click)="active = !active">menu</mat-icon>
+  <a routerLink class="logo-link" to="/">
     <img class="logo" src="assets/logo/original.svg" />
   </a>
-  <a href="/" class="link first">About</a>
-  <a href="/" class="link">Projects</a>
-  <a href="/" class="link">Articles</a>
-  <a href="/" class="link">Contact</a>
+  <div class="menu" [ngClass]="{ active: active }">
+    <a routerLink to="/" class="link">About</a>
+    <a routerLink to="/" class="link">Projects</a>
+    <a routerLink to="/" class="link">Articles</a>
+    <a routerLink to="/" class="link">Contact</a>
+  </div>
 </div>
