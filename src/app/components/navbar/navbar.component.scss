@@ -10,6 +10,11 @@
 
   .logo {
     height: 48px;
+
+    &.primary {
+      fill: $primary-color;
+      stroke: $primary-color;
+    }
   }
 
   .burger {
@@ -22,6 +27,7 @@
   .menu {
     display: flex;
     margin-left: auto;
+
     .link {
       height: 100%;
       min-width: 60px;
@@ -29,6 +35,10 @@
       margin: 0 2 * $space-unit;
 
       @include large-text;
+    }
+
+    &.primary .link {
+      color: $primary-color;
     }
   }
 }
@@ -65,22 +75,24 @@
     .menu {
       position: absolute;
       top: 86px;
-      left: -100%;
       flex-direction: column;
       background-color: black;
-      width: 100%;
+      width: 0;
+      left: 0;
       padding: $space-unit 0;
+      overflow: hidden;
 
-      transition: left ease-in-out 0.5s;
+      transition: width ease-in-out 0.5s;
 
-      .link {
+      .link,
+      &.primary .link {
         padding: $space-unit;
         color: $white-color;
       }
     }
 
     .menu.active {
-      left: 0;
+      width: 100%;
     }
   }
 }

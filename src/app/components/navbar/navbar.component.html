@@ -1,12 +1,12 @@
-<div class="navbar">
+<div class="navbar" (window:resize)="onResize($event)">
   <mat-icon class="burger" (click)="active = !active">menu</mat-icon>
   <a routerLink class="logo-link" to="/">
-    <img class="logo" src="assets/logo/original.svg" />
+    <img class="logo" [src]="'assets/logo/' + logoType + '.svg'" />
   </a>
-  <div class="menu" [ngClass]="{ active: active }">
-    <a routerLink to="/" class="link">About</a>
-    <a routerLink to="/" class="link">Projects</a>
-    <a routerLink to="/" class="link">Articles</a>
-    <a routerLink to="/" class="link">Contact</a>
+  <div class="menu" [ngClass]="{ active: active, primary: primary }">
+    <a routerLink="/" class="link">About</a>
+    <a routerLink="projects" class="link">Projects</a>
+    <a routerLink="/" class="link">Articles</a>
+    <a routerLink="/" class="link">Contact</a>
   </div>
 </div>

@@ -9,6 +9,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { ButtonComponent } from "./components/button/button.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatIconModule } from "@angular/material/icon";
+import { ProjectsPageComponent } from "./pages/projects/projects-page.component";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MatIconModule } from "@angular/material/icon";
     AboutPageComponent,
     NavbarComponent,
     ButtonComponent,
+    ProjectsPageComponent,
   ],
   imports: [
     BrowserModule,
