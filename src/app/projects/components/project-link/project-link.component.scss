@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: $space-unit;
+  border: 1px solid black;
+  border-radius: 3 * $space-unit;
+  background-color: $black-color;
+  color: $white-color;
+
+  .icon {
+    margin-right: $space-unit;
+  }
+}

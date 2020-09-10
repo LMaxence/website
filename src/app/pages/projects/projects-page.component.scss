@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
 
-  .menu {
+  .menu-container {
     position: fixed;
     top: 0;
     width: 30%;
@@ -17,15 +17,45 @@
 
     color: $white-color;
 
+    .menu-item {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: $space-unit;
+      }
+    }
+
     .title {
       @include h1-text;
-      text-decoration: underline;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        height: 4px;
+      }
     }
+  }
+
+  .menu-placeholder {
+    width: 30%;
+    min-width: 330px;
+    height: 100vh;
   }
 
   .list {
     flex: 1;
-    height: 300vh;
+    padding: 70px + 2 * $space-unit 4 * $space-unit 4 * $space-unit 4 *
+      $space-unit;
+
+    .project {
+      display: block;
+      margin-top: 2 * $space-unit;
+    }
   }
 }
 
@@ -34,7 +64,7 @@
     flex-direction: column-reverse;
     height: auto;
 
-    .menu {
+    .menu-container {
       position: relative;
       width: 100%;
       height: 30vh;

@@ -1,0 +1,16 @@
+<div
+  class="tag"
+  [ngStyle]="{
+    backgroundColor: !defaultColors.includes(tag.color) && tag.color,
+    color: !defaultColors.includes(tag.textColor) && tag.textColor,
+    border: tag.borderColor && '1px solid ' + tag.borderColor
+  }"
+  [ngClass]="{
+    primary: !tag.color || tag.color === 'primary',
+    secondary: tag.color === 'secondary',
+    white: tag.color === 'white'
+  }"
+>
+  <mat-icon *ngIf="tag.icon" class="icon" [svgIcon]="tag.icon"></mat-icon>
+  {{ tag.name }}
+</div>

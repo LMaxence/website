@@ -10,6 +10,8 @@ import { ButtonComponent } from "./components/button/button.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatIconModule } from "@angular/material/icon";
 import { ProjectsPageComponent } from "./pages/projects/projects-page.component";
+import { ProjectsModule } from "./projects/projects.module";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProjectsPageComponent } from "./pages/projects/projects-page.component"
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    ProjectsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,24 @@
+<div class="project-card">
+  <h2 class="title">{{ project.title }}</h2>
+  <p class="description">{{ project.description }}</p>
+  <div class="tags">
+    <app-project-tag
+      *ngFor="let tag of project.tags; let index = index"
+      [tag]="tag"
+      class="tag"
+      [ngClass]="{
+        first: index === 0
+      }"
+    ></app-project-tag>
+  </div>
+  <div class="links">
+    <app-project-link
+      *ngFor="let link of project.links; let index = index"
+      class="link"
+      [link]="link"
+      [ngClass]="{
+        first: index === 0
+      }"
+    ></app-project-link>
+  </div>
+</div>

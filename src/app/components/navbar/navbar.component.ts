@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
   active = false;
   primary = false;
   logoType = "original";
+  scrolled = false;
 
   constructor(private router: Router) {}
 
@@ -28,11 +29,16 @@ export class NavbarComponent implements OnInit {
     this.updateCurrentClasses(window.innerWidth, window.location.pathname);
   }
 
+  onScroll() {
+    this.scrolled = window.scrollY > 0;
+    this.updateCurrentClasses(window.innerWidth, window.location.pathname);
+  }
+
   private updateCurrentClasses(width: number, path: string) {
     const paths = path.split("/");
     if (paths.includes("projects")) {
       this.primary = true;
-      this.logoType = width > 800 ? "white" : "original";
+      this.logoType = width > 800 && !this.scrolled ? "white" : "original";
     } else {
       this.primary = false;
       this.logoType = "original";

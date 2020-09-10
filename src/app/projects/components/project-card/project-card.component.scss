@@ -1,0 +1,33 @@
+@import "src/styles/variables";
+
+.project-card {
+  padding: 3 * $space-unit;
+  border-radius: 3 * $space-unit;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+  .tags {
+    display: flex;
+    width: 100%;
+
+    .tag {
+      margin-left: $space-unit;
+
+      &.first {
+        margin-left: unset;
+      }
+    }
+  }
+
+  .links {
+    margin-top: 2 * $space-unit;
+    display: flex;
+
+    .link {
+      margin-left: $space-unit;
+
+      &.first {
+        margin-left: unset;
+      }
+    }
+  }
+}
