@@ -31,3 +31,10 @@
     }
   }
 }
+
+@media screen and (max-width: $m-breakpoint) {
+  .project-card {
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+}
