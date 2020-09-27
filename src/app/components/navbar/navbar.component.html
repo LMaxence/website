@@ -1,17 +1,9 @@
-<div
-  class="navbar"
-  (window:resize)="onResize($event)"
-  (window:scroll)="onScroll()"
-  [ngClass]="{ scrolled: scrolled }"
->
+<div class="navbar" (window:resize)="onResize()" (window:scroll)="onScroll()" [ngClass]="{ scrolled: scrolled }">
   <mat-icon class="burger" (click)="active = !active">menu</mat-icon>
   <a routerLink class="logo-link" to="/">
     <img class="logo" [src]="'assets/logo/' + logoType + '.svg'" />
   </a>
-  <div
-    class="menu"
-    [ngClass]="{ active: active, primary: primary || scrolled }"
-  >
+  <div class="menu" [ngClass]="{ active: active, primary: primary || scrolled }">
     <a routerLink="/" class="link">About</a>
     <a routerLink="projects" class="link">Projects</a>
     <!-- <a routerLink="/" class="link">Articles</a>

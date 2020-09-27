@@ -6,12 +6,8 @@ import { ProjectLinkComponent } from './components/project-link/project-link.com
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    ProjectCardComponent,
-    ProjectTagComponent,
-    ProjectLinkComponent,
-  ],
+  declarations: [ProjectCardComponent, ProjectTagComponent, ProjectLinkComponent],
   imports: [CommonModule, MatIconModule],
-  exports: [ProjectCardComponent],
+  exports: [ProjectCardComponent]
 })
 export class ProjectsModule {}

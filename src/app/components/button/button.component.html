@@ -7,7 +7,7 @@
     white: color === 'white',
     animated: animate
   }"
-  (click)="!disabled && click.emit()"
+  (click)="!disabled && clicked.emit()"
 >
   <span class="content">
     <ng-content></ng-content>

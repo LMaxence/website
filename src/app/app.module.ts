@@ -20,17 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPageComponent,
     NavbarComponent,
     ButtonComponent,
-    ProjectsPageComponent,
+    ProjectsPageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    ProjectsModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, ProjectsModule, HttpClientModule],
   providers: [Title],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

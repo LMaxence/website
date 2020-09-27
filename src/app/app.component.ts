@@ -6,7 +6,7 @@ import { DomSanitizer, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   constructor(
@@ -14,11 +14,8 @@ export class AppComponent {
     private domSanitizer: DomSanitizer,
     private titleService: Title
   ) {
-    icons.forEach((icon) => {
-      matIconRegistry.addSvgIcon(
-        icon.name,
-        domSanitizer.bypassSecurityTrustResourceUrl(icon.path)
-      );
+    icons.forEach(icon => {
+      matIconRegistry.addSvgIcon(icon.name, domSanitizer.bypassSecurityTrustResourceUrl(icon.path));
     });
 
     this.titleService.setTitle('Maxence Lecanu');

@@ -26,11 +26,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Test
-        run: npm run test
-
       - name: Build
-        run: npm run build
+        run: npm run build --prod
 
       - name: Deploy
         env:
@@ -39,5 +36,5 @@ jobs:
         run: |
           aws s3 cp \
             --recursive \
-            --region ap-northeast-2 \
-            [dist folder] s3://[s3 bucket name]
+            --region eu-west-2 \
+            dist/personal-website s3://maxencel-website

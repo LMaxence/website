@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterEvent } from '@angular/router';
+import { Router, RouterEvent } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
   active = false;
@@ -15,7 +15,6 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    const paths = window.location.pathname.split('/');
     this.updateCurrentClasses(window.innerWidth, window.location.pathname);
 
     this.router.events.subscribe((event: RouterEvent) => {
@@ -25,7 +24,7 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  onResize($event) {
+  onResize() {
     this.updateCurrentClasses(window.innerWidth, window.location.pathname);
   }
 

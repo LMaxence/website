@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Project } from '../models/project.model';
 
 export const projects: Project[] = [
@@ -11,29 +12,29 @@ export const projects: Project[] = [
         icon: 'brain',
         color: 'white',
         textColor: '#15aabf',
-        borderColor: '#15aabf',
+        borderColor: '#15aabf'
       },
       {
         name: 'vuejs',
         icon: 'vuejs',
         color: 'white',
         textColor: '#369a6e',
-        borderColor: '#369a6e',
-      },
+        borderColor: '#369a6e'
+      }
     ],
     links: [
       {
         url: 'https://github.com',
         label: 'Source code',
-        icon: 'github',
+        icon: 'github'
       },
       {
         url: 'https://github.com',
         label: 'Website',
-        icon: 'devices',
-      },
+        icon: 'devices'
+      }
     ],
-    id: 'opiwatch',
+    id: 'opiwatch'
   },
   {
     title: 'Opiwatch',
@@ -45,29 +46,29 @@ export const projects: Project[] = [
         icon: 'brain',
         color: 'white',
         textColor: '#15aabf',
-        borderColor: '#15aabf',
+        borderColor: '#15aabf'
       },
       {
         name: 'vuejs',
         icon: 'vuejs',
         color: 'white',
         textColor: '#369a6e',
-        borderColor: '#369a6e',
-      },
+        borderColor: '#369a6e'
+      }
     ],
     links: [
       {
         url: 'https://github.com',
         label: 'Source code',
-        icon: 'github',
+        icon: 'github'
       },
       {
         url: 'https://github.com',
         label: 'Website',
-        icon: 'devices',
-      },
+        icon: 'devices'
+      }
     ],
-    id: 'opiwatch',
+    id: 'opiwatch'
   },
   {
     title: 'Opiwatch',
@@ -79,29 +80,29 @@ export const projects: Project[] = [
         icon: 'brain',
         color: 'white',
         textColor: '#15aabf',
-        borderColor: '#15aabf',
+        borderColor: '#15aabf'
       },
       {
         name: 'vuejs',
         icon: 'vuejs',
         color: 'white',
         textColor: '#369a6e',
-        borderColor: '#369a6e',
-      },
+        borderColor: '#369a6e'
+      }
     ],
     links: [
       {
         url: 'https://github.com',
         label: 'Source code',
-        icon: 'github',
+        icon: 'github'
       },
       {
         url: 'https://github.com',
         label: 'Website',
-        icon: 'devices',
-      },
+        icon: 'devices'
+      }
     ],
-    id: 'opiwatch',
+    id: 'opiwatch'
   },
   {
     title: 'Opiwatch',
@@ -113,28 +114,28 @@ export const projects: Project[] = [
         icon: 'brain',
         color: 'white',
         textColor: '#15aabf',
-        borderColor: '#15aabf',
+        borderColor: '#15aabf'
       },
       {
         name: 'vuejs',
         icon: 'vuejs',
         color: 'white',
         textColor: '#369a6e',
-        borderColor: '#369a6e',
-      },
+        borderColor: '#369a6e'
+      }
     ],
     links: [
       {
         url: 'https://github.com',
         label: 'Source code',
-        icon: 'github',
+        icon: 'github'
       },
       {
         url: 'https://github.com',
         label: 'Website',
-        icon: 'devices',
-      },
+        icon: 'devices'
+      }
     ],
-    id: 'opiwatch',
-  },
+    id: 'opiwatch'
+  }
 ];

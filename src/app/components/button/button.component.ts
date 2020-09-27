@@ -1,14 +1,13 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+  styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-  @Input() disabled: boolean = false;
-  @Input() animate: boolean = false;
-  @Output() click: EventEmitter<void> = new EventEmitter();
-  @Input() color: string = 'primary';
-  constructor() {}
+  @Input() disabled = false;
+  @Input() animate = false;
+  @Output() clicked: EventEmitter<void> = new EventEmitter();
+  @Input() color = 'primary';
 }

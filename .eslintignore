@@ -1,0 +1,11 @@
+cypress
+node_modules
+src/polyfills.ts
+coverage
+dist
+scripts
+
+karma.conf.js
+src/assets/js/tc_vars.js
+src/assets/js/tc_vars.preprod.js
+src/assets/js/tc_vars.prod.js
