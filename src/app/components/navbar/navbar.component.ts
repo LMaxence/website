@@ -1,21 +1,21 @@
-import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Router, RouterEvent } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterEvent } from '@angular/router';
 
 @Component({
-  selector: "app-navbar",
-  templateUrl: "./navbar.component.html",
-  styleUrls: ["./navbar.component.scss"],
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
   active = false;
   primary = false;
-  logoType = "original";
+  logoType = 'original';
   scrolled = false;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
-    const paths = window.location.pathname.split("/");
+    const paths = window.location.pathname.split('/');
     this.updateCurrentClasses(window.innerWidth, window.location.pathname);
 
     this.router.events.subscribe((event: RouterEvent) => {
@@ -35,13 +35,13 @@ export class NavbarComponent implements OnInit {
   }
 
   private updateCurrentClasses(width: number, path: string) {
-    const paths = path.split("/");
-    if (paths.includes("projects")) {
+    const paths = path.split('/');
+    if (paths.includes('projects')) {
       this.primary = true;
-      this.logoType = width > 800 && !this.scrolled ? "white" : "original";
+      this.logoType = width > 800 && !this.scrolled ? 'white' : 'original';
     } else {
       this.primary = false;
-      this.logoType = "original";
+      this.logoType = 'original';
     }
   }
 }

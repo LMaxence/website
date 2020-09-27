@@ -1,9 +1,11 @@
 @import "src/styles/variables";
+@import "src/styles/typographies";
 
 .project-card {
   padding: 3 * $space-unit;
   border-radius: 3 * $space-unit;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  @include large-text;
 
   .tags {
     display: flex;
