@@ -37,7 +37,7 @@
 
     .text,
     .link-button .button-text {
-      @include regular-text;
+      @include large-text;
     }
 
     .buttons-container {

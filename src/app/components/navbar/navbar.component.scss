@@ -56,7 +56,6 @@
     .menu {
       .link {
         color: $primary-color;
-        @include regular-text;
         min-width: unset;
       }
     }

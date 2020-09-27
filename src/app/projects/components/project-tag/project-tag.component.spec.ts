@@ -1,14 +1,14 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectTagComponent } from "./project-tag.component";
+import { ProjectTagComponent } from './project-tag.component';
 
-describe("ProjectTagComponent", () => {
+describe('ProjectTagComponent', () => {
   let component: ProjectTagComponent;
   let fixture: ComponentFixture<ProjectTagComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ProjectTagComponent],
+      declarations: [ProjectTagComponent]
     }).compileComponents();
   }));
 
@@ -18,7 +18,7 @@ describe("ProjectTagComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

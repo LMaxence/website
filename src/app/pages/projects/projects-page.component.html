@@ -18,13 +18,14 @@
   </div>
   <div class="menu-placeholder"></div>
   <div class="list">
-    <app-project-card
-      class="project"
-      *ngFor="let project of projects; let index = index"
-      [ngClass]="{
-        first: index === 0
-      }"
-      [project]="project"
-    ></app-project-card>
+    <div class="list-window">
+      <app-project-card
+        class="project"
+        *ngFor="let project of projects; let first = first; let last = last"
+        [class.first]="first"
+        [class.last]="last"
+        [project]="project"
+      ></app-project-card>
+    </div>
   </div>
 </div>

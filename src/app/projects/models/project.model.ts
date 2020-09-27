@@ -1,5 +1,5 @@
-import { Link } from "./link.model";
-import { Tag } from "./tag.model";
+import { Link } from './link.model';
+import { Tag } from './tag.model';
 
 export interface Project {
   title: string;

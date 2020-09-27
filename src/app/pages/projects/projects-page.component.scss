@@ -20,6 +20,7 @@
     .menu-item {
       display: flex;
       align-items: center;
+      @include large-text;
 
       .icon {
         margin-right: $space-unit;
@@ -52,9 +53,14 @@
     padding: 70px + 2 * $space-unit 4 * $space-unit 4 * $space-unit 4 *
       $space-unit;
 
-    .project {
-      display: block;
-      margin-top: 2 * $space-unit;
+    .list-window {
+      display: flex;
+      flex-direction: column;
+
+      .project {
+        display: block;
+        margin-top: 2 * $space-unit;
+      }
     }
   }
 }
@@ -91,14 +97,18 @@
 
     .list {
       height: unset;
-      display: flex;
       overflow-x: scroll;
       padding-top: 0;
 
-      .project {
-        width: 80vw;
-        flex-shrink: 0;
-        margin-right: 3 * $space-unit;
+      .list-window {
+        padding-right: 3 * $space-unit;
+        flex-direction: row;
+
+        .project {
+          width: 80vw;
+          flex-shrink: 0;
+          margin-right: 3 * $space-unit;
+        }
       }
     }
   }
