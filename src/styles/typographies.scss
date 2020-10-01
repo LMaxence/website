@@ -5,6 +5,11 @@
   font-weight: bold;
 }
 
+@mixin h2-text {
+  font-size: $h2-font-size;
+  font-weight: bold;
+}
+
 @mixin h3-text {
   font-size: $h3-font-size;
 }

@@ -11,8 +11,6 @@ export class NavbarComponent {
 
   onScroll() {
     const scroll = window.scrollY;
-    if (scroll) {
-      this.scrolled = true;
-    }
+    this.scrolled = scroll > 0;
   }
 }

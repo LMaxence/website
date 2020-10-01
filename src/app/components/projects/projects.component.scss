@@ -1,0 +1,29 @@
+@import 'src/styles/variables';
+@import 'src/styles/typographies';
+
+.projects {
+  padding: 3 * $space-unit;
+
+  .title {
+    position: relative;
+    @include h2-text;
+    width: 100%;
+    display: flex;
+
+    .tick {
+      flex: 2;
+      position: relative;
+      align-self: center;
+      height: 2px;
+      background-color: red;
+
+      &.right {
+        margin-left: 3 * $space-unit;
+      }
+
+      &.left {
+        margin-right: 3 * $space-unit;
+      }
+    }
+  }
+}

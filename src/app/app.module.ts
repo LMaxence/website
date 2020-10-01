@@ -11,9 +11,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectsModule } from './projects/projects.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingComponent } from './components/landing/landing.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexPageComponent, AboutPageComponent, NavbarComponent, ButtonComponent],
+  declarations: [
+    AppComponent,
+    IndexPageComponent,
+    AboutPageComponent,
+    NavbarComponent,
+    ButtonComponent,
+    LandingComponent,
+    ProjectsComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, ProjectsModule, HttpClientModule],
   providers: [Title],
   bootstrap: [AppComponent]
