@@ -1,4 +1,4 @@
-@import "src/styles/variables.scss";
+@import 'src/styles/variables.scss';
 
 @mixin h1-text {
   font-size: $h1-font-size;
@@ -11,8 +11,16 @@
 
 @mixin regular-text {
   font-size: $regular-font-size;
+
+  @media screen and (max-width: $m-breakpoint) {
+    font-size: $regular-font-size-mobile;
+  }
 }
 
 @mixin large-text {
   font-size: $large-font-size;
+
+  @media screen and (max-width: $m-breakpoint) {
+    font-size: $large-font-size-mobile;
+  }
 }

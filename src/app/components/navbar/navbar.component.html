@@ -1,12 +1,9 @@
-<div class="navbar" (window:resize)="onResize()" (window:scroll)="onScroll()" [ngClass]="{ scrolled: scrolled }">
+<div class="navbar" (window:scroll)="onScroll()" [ngClass]="{ scrolled: false }">
   <mat-icon class="burger" (click)="active = !active">menu</mat-icon>
   <a routerLink class="logo-link" to="/">
-    <img class="logo" [src]="'assets/logo/' + logoType + '.svg'" />
+    <img class="logo" [src]="'assets/logo/original.svg'" />
   </a>
-  <div class="menu" [ngClass]="{ active: active, primary: primary || scrolled }">
+  <div class="menu" [ngClass]="{ active: active }">
     <a routerLink="/" class="link">About</a>
-    <a routerLink="projects" class="link">Projects</a>
-    <!-- <a routerLink="/" class="link">Articles</a>
-    <a routerLink="/" class="link">Contact</a> -->
   </div>
 </div>
