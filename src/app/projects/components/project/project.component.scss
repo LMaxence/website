@@ -1,0 +1,59 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/typographies.scss';
+
+.project {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+
+  .left-content,
+  .right-content {
+    width: 50%;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      @include h3-text;
+      margin-bottom: $space-unit;
+    }
+
+    .metadata {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: relative;
+      padding-top: 2 * $space-unit;
+
+      @include large-text;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: grey;
+      }
+    }
+
+    .description {
+      margin-top: 2 * $space-unit;
+      @include regular-text;
+      text-align: justify;
+    }
+  }
+
+  .right-content {
+    display: flex;
+
+    .image.main {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+}
