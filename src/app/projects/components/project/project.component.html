@@ -1,0 +1,31 @@
+<div class="project">
+  <div class="left-content">
+    <h3 class="title">{{ project.title }}</h3>
+    <div class="badges">
+      <app-project-tag
+        class="tag"
+        *ngFor="let tag of project.tags; let first = first"
+        [class.first]="first"
+        [tag]="tag"
+      ></app-project-tag>
+    </div>
+    <div class="metadata">
+      <span class="company">{{ project.company || 'Personal project' }}</span>
+      <span class="date">{{ startDate | date: 'MMMM yyyy' }} - {{ (endDate | date: 'MMMM yyyy') || 'Today' }}</span>
+    </div>
+    <div class="description">
+      {{ project.description }}
+    </div>
+    <div class="links">
+      <app-project-link
+        *ngFor="let link of project.links; let first = first"
+        class="link"
+        [class.first]="first"
+        [link]="link"
+      ></app-project-link>
+    </div>
+  </div>
+  <div class="right-content">
+    <img class="image main" [src]="project.mainImageUrl" alt="" />
+  </div>
+</div>

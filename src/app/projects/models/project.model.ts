@@ -7,4 +7,8 @@ export interface Project {
   id: string;
   tags: Tag[];
   links: Link[];
+  startDate: string;
+  endDate?: string;
+  mainImageUrl: string;
+  company?: string;
 }
