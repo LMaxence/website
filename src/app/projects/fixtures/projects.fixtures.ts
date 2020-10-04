@@ -10,49 +10,49 @@ Our POC was presented and rewarded in March 2019 at the <a href="https://www.uni
       `,
     tags: [
       {
-        name: 'ml',
+        name: 'ML',
         icon: 'brain',
         color: 'white',
         textColor: '#15aabf',
         borderColor: '#15aabf'
       },
       {
-        name: 'keras',
+        name: 'Keras',
         icon: 'keras',
         color: 'white',
         textColor: '#ca0000',
         borderColor: '#ca0000'
       },
       {
-        name: 'vuejs',
+        name: 'VueJs',
         icon: 'vuejs',
         color: 'white',
         textColor: '#369a6e',
         borderColor: '#369a6e'
       },
       {
-        name: 'gitlab ci',
+        name: 'Gitlab CI',
         icon: 'gitlab',
         color: 'white',
         textColor: '#2f2155',
         borderColor: '#2f2155'
       },
       {
-        name: 'python',
+        name: 'Python',
         icon: 'python',
         color: 'white',
         textColor: '#346e9e',
         borderColor: '#346e9e'
       },
       {
-        name: 'flask',
+        name: 'Flask',
         icon: 'flask',
         color: 'white',
         textColor: 'black',
         borderColor: 'black'
       },
       {
-        name: 'mqtt',
+        name: 'MQTT',
         icon: 'mqtt',
         color: 'white',
         textColor: '#6f1471',
@@ -78,23 +78,45 @@ Our POC was presented and rewarded in March 2019 at the <a href="https://www.uni
     company: 'Opiwatch'
   },
   {
-    title: 'Opiwatch',
-    description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum omnis doloribus ducimus temporibus maiores mollitia facilis eos explicabo cupiditate quidem, nostrum sequi cumque ea id magnam at dolorum expedita. Illum.',
+    title: 'This very website',
+    description: `In order to promote my work, show my skills and also have my own platform on the web, I decided to develop my own website.</br>
+      As every one of my projects, it makes use of a ci pipeline (<code>Github actions in this case</code>) and is built with <code>Angular</code>.</br>
+      The website is completely hosted on <code>AWS</code> for optimizing infrastructure costs.`,
     tags: [
       {
-        name: 'ml',
-        icon: 'brain',
+        name: 'Angular',
+        icon: 'angular',
         color: 'white',
-        textColor: '#15aabf',
-        borderColor: '#15aabf'
+        textColor: '#bd002e',
+        borderColor: '#bd002e'
       },
       {
-        name: 'vuejs',
-        icon: 'vuejs',
+        name: 'Github Actions',
+        icon: 'github',
         color: 'white',
-        textColor: '#369a6e',
-        borderColor: '#369a6e'
+        textColor: 'black',
+        borderColor: 'black'
+      },
+      {
+        name: 'AWS S3',
+        icon: 'aws-s3',
+        color: 'white',
+        textColor: '#d94f41',
+        borderColor: '#d94f41'
+      },
+      {
+        name: 'AWS Cloudfront',
+        icon: 'aws-cloudfront',
+        color: 'white',
+        textColor: '#d94f41',
+        borderColor: '#d94f41'
+      },
+      {
+        name: 'AWS Route 53',
+        icon: 'aws-route53',
+        color: 'white',
+        textColor: '#d94f41',
+        borderColor: '#d94f41'
       }
     ],
     links: [
@@ -110,7 +132,7 @@ Our POC was presented and rewarded in March 2019 at the <a href="https://www.uni
       }
     ],
     id: 'opiwatch',
-    mainImageUrl: 'https://via.placeholder.com/300.png/09f/fff',
-    startDate: '2019-01-01T00:00:00'
+    mainImageUrl: 'assets/images/personal-website.png',
+    startDate: '2020-09-01T00:00:00'
   }
 ];
