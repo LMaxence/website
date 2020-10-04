@@ -1,4 +1,4 @@
 <div class="projects">
   <h2 class="title"><span class="tick left"></span>Featured projects<span class="tick right"></span></h2>
-  <app-project class="project"></app-project>
+  <app-project *ngFor="let project of projects" [project]="project" class="project"></app-project>
 </div>
