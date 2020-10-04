@@ -42,6 +42,17 @@
     width: 32px;
     font-size: 32px;
   }
+
+  &.alternative {
+    background-color: $primary-color;
+    .menu .link {
+      color: $white-color;
+    }
+
+    @media screen and (max-width: $s-breakpoint) {
+      background-color: unset;
+    }
+  }
 }
 
 @media screen and (max-width: $m-breakpoint) {

@@ -1,0 +1,22 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/typographies.scss';
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding: 2 * $space-unit;
+  box-sizing: border-box;
+  width: 100%;
+
+  .title {
+    width: 60%;
+    margin: auto;
+    @include h1-text;
+  }
+
+  .markdown-content {
+    width: 60%;
+    margin: auto;
+  }
+}

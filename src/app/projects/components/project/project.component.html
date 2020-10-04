@@ -1,5 +1,5 @@
 <div class="project">
-  <h3 class="title">{{ project.title }}</h3>
+  <a class="title" [routerLink]="'/project/' + project.id">{{ project.title }}</a>
   <div class="left-content">
     <div class="badges">
       <app-project-tag

@@ -11,8 +11,13 @@
 
   .title {
     @include h3-text;
+    font-weight: bold;
     margin-bottom: $space-unit;
     width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .left-content {
