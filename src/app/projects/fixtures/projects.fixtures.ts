@@ -36,8 +36,8 @@ export const projects: Project[] = [
     ],
     id: 'opiwatch',
     mainImageUrl: 'https://via.placeholder.com/300.png/09f/fff',
-    startDate: '01-01-2019',
-    endDate: '01-05-2019'
+    startDate: '2019-01-01T00:00:00',
+    endDate: '2019-06-01T00:00:00+0200'
   },
   {
     title: 'Opiwatch',
@@ -73,6 +73,6 @@ export const projects: Project[] = [
     ],
     id: 'opiwatch',
     mainImageUrl: 'https://via.placeholder.com/300.png/09f/fff',
-    startDate: '01-01-2019'
+    startDate: '2019-01-01T00:00:00'
   }
 ];

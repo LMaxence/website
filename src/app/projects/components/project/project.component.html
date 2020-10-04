@@ -11,7 +11,7 @@
     </div>
     <div class="metadata">
       <span class="company">{{ project.company || 'Personal project' }}</span>
-      <span class="date">{{ project.startDate }} - {{ project.endDate || 'Today' }}</span>
+      <span class="date">{{ startDate | date: 'MMMM yyyy' }} - {{ (endDate | date: 'MMMM yyyy') || 'Today' }}</span>
     </div>
     <div class="description">
       {{ project.description }}

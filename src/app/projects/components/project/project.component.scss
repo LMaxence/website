@@ -4,16 +4,13 @@
 .project {
   width: 80%;
   margin: auto;
+  margin-top: 10 * $space-unit;
 
   display: flex;
 
-  .left-content,
-  .right-content {
-    width: 50%;
-  }
-
   .left-content {
     display: flex;
+    width: 60%;
     flex-direction: column;
 
     .title {
@@ -75,10 +72,30 @@
 
   .right-content {
     display: flex;
+    width: 40%;
 
     .image.main {
-      max-width: 80%;
+      width: 80%;
       margin: auto;
+    }
+  }
+
+  @media screen and (max-width: $l-breakpoint) {
+    flex-direction: column;
+
+    .left-content,
+    .right-content {
+      width: 100%;
+    }
+
+    .right-content {
+      margin-top: 5 * $space-unit;
+      display: flex;
+
+      .image.main {
+        width: 80%;
+        margin: auto;
+      }
     }
   }
 }
