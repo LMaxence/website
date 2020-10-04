@@ -12,7 +12,7 @@
       This website aims at presenting <b>my work</b> so far. You may also use it to <b>reach out to me</b>.
     </p>
     <div class="buttons-container">
-      <app-button class="link-button first" color="white" [animate]="true" routerLink="/projects">
+      <app-button class="link-button first" (click)="clickOnProjectsButton.emit()" color="white" [animate]="true">
         <span class="button-text">My projects</span>
       </app-button>
       <!-- <app-button

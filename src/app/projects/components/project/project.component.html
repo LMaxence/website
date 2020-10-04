@@ -1,6 +1,6 @@
 <div class="project">
+  <h3 class="title">{{ project.title }}</h3>
   <div class="left-content">
-    <h3 class="title">{{ project.title }}</h3>
     <div class="badges">
       <app-project-tag
         class="tag"
@@ -10,12 +10,14 @@
       ></app-project-tag>
     </div>
     <div class="metadata">
-      <span class="company">{{ project.company || 'Personal project' }}</span>
-      <span class="date">{{ startDate | date: 'MMMM yyyy' }} - {{ (endDate | date: 'MMMM yyyy') || 'Today' }}</span>
+      <span class="company">
+        <i>{{ project.company || 'Personal project' }}</i>
+      </span>
+      <span class="date">
+        <i>{{ startDate | date: 'MMMM yyyy' }} - {{ (endDate | date: 'MMMM yyyy') || 'Today' }}</i>
+      </span>
     </div>
-    <div class="description">
-      {{ project.description }}
-    </div>
+    <div class="description" [innerHTML]="project.description"></div>
     <div class="links">
       <app-project-link
         *ngFor="let link of project.links; let first = first"
