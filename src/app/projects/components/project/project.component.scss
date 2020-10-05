@@ -11,14 +11,20 @@
 
   .title {
     @include h3-text;
+    font-weight: bold;
     margin-bottom: $space-unit;
     width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .left-content {
     display: flex;
     width: 60%;
     flex-direction: column;
+    flex: 1;
 
     .badges {
       display: flex;

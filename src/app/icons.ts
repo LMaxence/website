@@ -12,5 +12,8 @@ export const icons: { name: string; path: string }[] = [
   { name: 'aws-cloudfront', path: 'assets/icons/aws-cloudfront.svg' },
   { name: 'aws-s3', path: 'assets/icons/aws-s3.svg' },
   { name: 'aws-route53', path: 'assets/icons/aws-route53.svg' },
-  { name: 'devices', path: 'assets/icons/devices.svg' }
+  { name: 'devices', path: 'assets/icons/devices.svg' },
+  { name: 'golang-gopher', path: 'assets/icons/golang-gopher.svg' },
+  { name: 'nestjs', path: 'assets/icons/nestjs.svg' },
+  { name: 'digitalocean', path: 'assets/icons/digitalocean.svg' }
 ];
