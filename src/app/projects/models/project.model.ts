@@ -9,6 +9,6 @@ export interface Project {
   links: Link[];
   startDate: string;
   endDate?: string;
-  mainImageUrl: string;
+  mainImageUrl?: string;
   company?: string;
 }
