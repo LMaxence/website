@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 export default {
   title: 'An attempt at forecasting heart attacks from electrocardiogram signals',
-  description: `With a small team of fellow ENSTA students, we found out a database containing electrocardiagrams records and a research paper about heart attacks early detection using <i>t-waves analysis</i>.</br>
-We decided to take a shot at implementing a model based on this paper, and to design an infrastructure allowing hospitals or retirement homes to use this model.</br>
+  description: `With a small team of fellow ENSTA students, we found out a database containing electrocardiagrams records and a research paper about heart attacks early detection using <i>t-waves analysis</i>.</br></br>
+We decided to take a shot at implementing a model based on this paper, and to design an infrastructure allowing hospitals or retirement homes to use this model.</br></br>
 Our POC was presented and rewarded in March 2019 at the <a href="https://www.universite-paris-saclay.fr/formation/entrepreneuriat-etudiant/journee-entrepreneuriat-etudiant">Student entrepreneurship day of Paris-Saclay university</a>, with a first prize.
     `,
   tags: [

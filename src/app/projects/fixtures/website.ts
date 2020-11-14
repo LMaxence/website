@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 export default {
   title: 'This very website',
-  description: `In order to promote my work, show my skills and also have my own platform on the web, I decided to develop my own website.</br>
-    As every one of my projects, it makes use of a ci pipeline (<code>Github actions in this case</code>) and is built with <code>Angular</code>.</br>
+  description: `In order to promote my work, show my skills and also have my own platform on the web, I decided to develop my own website.</br></br>
+    As every one of my projects, it makes use of a ci pipeline (<code>Github actions</code> in this case) and is built with <code>Angular</code>.</br></br>
     The website is completely hosted on <code>AWS</code> for optimizing infrastructure costs.`,
   tags: [
     {

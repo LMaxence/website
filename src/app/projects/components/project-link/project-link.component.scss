@@ -13,3 +13,10 @@
     margin-right: $space-unit;
   }
 }
+
+@-moz-document url-prefix() {
+  .link .text {
+    position: relative;
+    top: 2px;
+  }
+}
