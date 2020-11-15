@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   title: 'A basic ray-tracing image renderer written in Go',
-  description: `I really like the Golang programming language.</br></br>At the time I wanted to learn Go, I was also digging into how video games are ran on a computer, graphic engines, image rendering and other similar shady stuff.</br></br>Since the best way to learn is practising, I started to implement basic image rendering algorithms in Go.`,
+  description: `I really like the Golang programming language.</br></br>At the time I wanted to learn Go, I was also digging into how video games are ran on a computer, graphic engines, image rendering and other similar shady stuff.</br></br>Since the best way to learn is practicing, I started to implement basic image rendering algorithms in Go.`,
   tags: [
     {
       name: 'Go',
