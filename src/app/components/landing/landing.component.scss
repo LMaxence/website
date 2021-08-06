@@ -19,25 +19,27 @@
 
   .description {
     flex: 1;
-    background-color: $primary-color;
+    background-color: $white-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-left: 2px solid $primary-color;
 
-    .text,
     .header {
-      color: $white-color;
+      color: $primary-color;
       width: 80%;
+      @include h3-text;
     }
 
-    .header {
-      @include h3-text;
+    .text {
+      color: $black-color;
+      width: 80%;
     }
 
     .text,
     .link-button .button-text {
-      @include large-text;
+      @include regular-text;
     }
 
     .buttons-container {

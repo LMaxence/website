@@ -15,5 +15,8 @@ export const icons: { name: string; path: string }[] = [
   { name: 'devices', path: 'assets/icons/devices.svg' },
   { name: 'golang-gopher', path: 'assets/icons/golang-gopher.svg' },
   { name: 'nestjs', path: 'assets/icons/nestjs.svg' },
-  { name: 'digitalocean', path: 'assets/icons/digitalocean.svg' }
+  { name: 'digitalocean', path: 'assets/icons/digitalocean.svg' },
+  { name: 'typescript', path: 'assets/icons/typescript.svg' },
+  { name: 'npm', path: 'assets/icons/npm.svg' },
+  { name: 'read-book', path: 'assets/icons/read-book.svg' }
 ];

@@ -16,21 +16,14 @@
     .link {
       height: 100%;
       min-width: 60px;
-      color: $white-color;
+      color: $primary-color;
       margin: 0 2 * $space-unit;
-
       @include large-text;
     }
   }
 
-  &.scrolled {
-    background-color: $white-color;
-    box-shadow: 0px 9px 64px -23px rgba(0, 0, 0, 0.75);
-
-    .menu .link {
-      color: $primary-color;
-    }
-  }
+  background-color: $white-color;
+  box-shadow: 0px 9px 64px -23px rgba(0, 0, 0, 0.75);
 
   .logo {
     height: 48px;
